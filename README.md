@@ -24,4 +24,4 @@ Izmantotās bibliotēkas
 
 openpyxl - Izmantots lai atvērtu, aizvērtu un varētu izmantot excel lapas un datus
 
-Programmatūra izveidota specifiskai darbībai, lai automatizētu 
+Programmatūra izveidota specifiskai darbībai, lai automatizētu daļu no personas darba, tapēc nevar tikt pielietota dažādi. Rakstīta specifiskām prasībām un lielumiem, un failiem
