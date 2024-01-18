@@ -67,7 +67,7 @@ print(output,len(output))
 wb.close()
 wb1.close()
 
-wb2 = load_workbook("konti.xlsx") #atver rezultātu excel
+wb2 = load_workbook("finals.xlsx") #atver rezultātu excel
 ws2 = wb2.active
 max_row2 = ws2.max_row
 ws2.delete_row(1,max_row2) #iztīra visu lapu, lai būtu jaunākie dati
@@ -79,7 +79,7 @@ ws2["B1"].value = "msisdn"
 ws2["C1"].value = "IMEI"
 ws2["D1"].value = "IMEI 2"
 
-while a < (len(output)-4):
+while a < (len(output)-4): #ievieto iegūtos datus excelī
     ws2["A"+str(inp)].value = output[a]
     ws2["B"+str(inp)].value = output[a+1]
     ws2["C"+str(inp)].value = output[a+2]
@@ -87,5 +87,5 @@ while a < (len(output)-4):
     a+=4
     inp+=1
 
-wb2.save("konti.xlsx")
+wb2.save("konti.xlsx") #saglabā datus
 wb2.close()
